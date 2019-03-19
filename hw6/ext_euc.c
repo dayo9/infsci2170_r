@@ -1,5 +1,7 @@
 #include <cstdio>
 #include <cassert>
+#include <cstdlib>
+#include <cstring>
 
 /*int a, b;*/
 
@@ -22,7 +24,7 @@ int gccd(int x, int y, int &a, int &b) {
 
 
 int main() {
-	#define LINE_MAX = 256;
+	#define LINE_MAX 256
 	char buf[LINE_MAX];
 	char *end;
 
