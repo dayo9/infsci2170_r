@@ -1,3 +1,9 @@
+/*
+Ayodele, David
+INFSCI 2170
+HW 6 Pb 2
+3/18/19
+*/
 #include <cstdio>
 #include <cassert>
 #include <cstdlib>
@@ -20,7 +26,6 @@ int gccd(int x, int y, int &a, int &b) {
 		return r;
 	}
 }
-
 
 
 int main() {
