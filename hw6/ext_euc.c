@@ -28,31 +28,25 @@ int main() {
 	char buf[LINE_MAX];
 	char *end;
 
-	int a, b;
-	int x =0, y = 0;
+	char *p, s[128];
+	int a, b, x, y;
 	
 	
 	printf("Please enter an integer: ");
-	do {
-	     if (!fgets(buf, sizeof buf, stdin))
-	        break;
-
-	     // remove \n
-	     buf[strlen(buf) - 1] = 0;
-
-	     int x = strtol(buf, &end, 10);
-	} while (end != buf + strlen(buf));
-
+    while (fgets(s, sizeof(s), stdin)) {
+        x = strtol(s, &p, 10);
+        if (p == s || *p != '\n') {
+            printf("Please enter an integer: ");
+        } else break;
+    }
+    
 	printf("Please enter another integer: ");
-	do {
-	     if (!fgets(buf, sizeof buf, stdin))
-	        break;
-
-	     // remove \n
-	     buf[strlen(buf) - 1] = 0;
-
-	     int y = strtol(buf, &end, 10);
-	} while (end != buf + strlen(buf));
+	while (fgets(s, sizeof(s), stdin)) {
+        y = strtol(s, &p, 10);
+        if (p == s || *p != '\n') {
+            printf("Please enter an integer: ");
+        } else break;
+    }
 	
 	int r = gccd(x, y, a, b);
 	printf("%d * %d + %d * %d = %d\n", a, x, b, y, r);
