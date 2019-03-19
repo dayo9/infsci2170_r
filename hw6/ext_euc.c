@@ -19,11 +19,40 @@ int gccd(int x, int y, int &a, int &b) {
 	}
 }
 
+
+
 int main() {
+	#define LINE_MAX = 256;
+	char buf[LINE_MAX];
+	char *end;
+
 	int a, b;
 	int x =0, y = 0;
-	scanf(%d, x);
+	
+	
+	printf("Please enter an integer: ");
+	do {
+	     if (!fgets(buf, sizeof buf, stdin))
+	        break;
+
+	     // remove \n
+	     buf[strlen(buf) - 1] = 0;
+
+	     int x = strtol(buf, &end, 10);
+	} while (end != buf + strlen(buf));
+
+	printf("Please enter another integer: ");
+	do {
+	     if (!fgets(buf, sizeof buf, stdin))
+	        break;
+
+	     // remove \n
+	     buf[strlen(buf) - 1] = 0;
+
+	     int y = strtol(buf, &end, 10);
+	} while (end != buf + strlen(buf));
+	
 	int r = gccd(x, y, a, b);
 	printf("%d * %d + %d * %d = %d\n", a, x, b, y, r);
-	printf("=> a = %d\n b = %d\n", a, b);
+	printf("a = %d\n b = %d\n", a, b);
 }
