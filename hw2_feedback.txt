@@ -1,0 +1,21 @@
+Feedback to Learner
+2/3/19 6:37 PM
+2)-1
+
+6) -4
+
+for all questions you should write how you solved it﻿﻿﻿ completely ﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿
+
+7) -10 not complete
+
+not step by step
+
+no LFSR
+
+period is 15
+
+⇒ b0=k7,b1=1 ,b2=0, b3=0
+
+if b0=1 it never repeats 1000 then b0=1
+
+﻿﻿text:       A C T (space) S O O N ⇒ act soon
