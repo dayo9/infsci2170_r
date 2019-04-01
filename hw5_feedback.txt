@@ -1,31 +1,3 @@
-4)-3
-
-yes it is field since it has an additive identity which is ‘a’  and it has a multiplicative identity which is ‘b’
-
-Multiplicative for field is
-
-Proof for multiplicative associative and commutative, etc.
-
-
-S is closed under ‘+’ and ‘*’
-
-(a+b)=(b+a) & (a+b)+c=a+(b+c) for a,b
-
-As a+a=a, b+a=b, then a is the additive identity
-
-As a+a=a, b+b=a, then the additive inverse is themselves for a,
-
-
-
-(a*b)*a = a*(b*a)
-
-As a*b=a,b*b=b, then b is the multiplicative identity
-
-a*(b+c) = (a*b)+(a*c) = (b+c)*a for a,b(c can be a/b)
-
-Thus, S is a ring.
-
-As the multiplicative identity is b, a is the additive identity, and b*b = b, then except the
-
-additive identity, other element in S has their multiplicative inverse. Thus, S is a field
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:5297b8d1f9fdb5bbde1ca254045d7a3b8abe21f9bfe5e46e0be4c7ad9eaf6c00
+size 781
